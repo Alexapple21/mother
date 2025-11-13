@@ -1,0 +1,168 @@
+
+@font-face {       
+font-family: 'BPnoScript';
+src: url(https://humantooth.neocities.org/fonts/BPnoScript.woff) format('woff');
+font-weight:normal; }
+
+body {
+    background-color: rgb(136, 144, 99);
+    background-image: url('/img/gray-floral.png');
+    font-family: 'brush script mt', cursive, 'BPnoScript', sans-serif;
+    color:  rgb(76, 61, 25);
+    margin: 10%;
+}
+
+
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+    background-color:  rgb(76, 61, 25);
+    border-radius: 10px;
+    padding:20px;
+    margin-bottom: 20px;
+    padding:20px;
+}
+
+header img {
+max-width: 100px;
+height: auto;
+display: block;
+margin: 0 auto;
+min-width: 80%
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%; 
+
+}
+
+nav a {
+    padding: 8px 15px;
+    border-radius: 10px; 
+    text-decoration: none;
+     background-color: rgb(207, 187, 153);
+    
+     
+}
+
+
+
+.nav-links {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+justify-content: center;
+width: 100%;
+gap:1.5rem;
+align-items: center; /* green border */
+}
+
+.nav-links li {
+  position: relative;
+  display: flex; 
+  border-radius: 20px;
+  padding:0;
+
+
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 17px;
+  width: max-content;
+  color:rgb(53, 64, 36);
+ font-size: 25px;
+}
+
+.mainsection {
+    background-color: rgb(136, 144, 99);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.mainsection h1 {
+    font-size: 60px;
+    margin:0px
+}
+
+iframe {
+    width: 100%;
+   margin: 0px;
+   padding: 0px;
+}
+
+
+
+@media (max-width: 768px) {
+  nav {
+    justify-content: center; /* center nav container itself */
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center; /* centers children (the li) horizontally */
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem; /* space between items */
+  }
+
+  .imgcontainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+  .nav-links li {
+    width: auto;
+    text-align: center; /* space between items */
+  }
+
+    .nav-links li a {
+      display: flex;
+      justify-content: center;
+      align-items: center; /* centers text inside the link */
+  
+      
+    }
+  }
+    
+     @media (max-width: 600px) {
+    .container {
+    flex-direction: column;
+    gap:0
+    }  
+
+header img {
+transform: scale(1.4);
+margin-bottom: 13px;
+}
+
+
+ 
+/* Wobble animation for header */
+@keyframes wobble {
+  16.65% { transform: skew(-12deg); }
+  33.3%  { transform: skew(10deg); }
+  49.95% { transform: skew(-6deg); }
+  66.6%  { transform: skew(4deg); }
+  83.25% { transform: skew(-2deg); }
+  100%   { transform: skew(0); }
+}
+     }
+
